@@ -10,7 +10,7 @@
 ## CREATED BY
 
 - [DHANUSH S](https://www.linkedin.com/in/dhanush-s-47b499240)
-- [THEERAJ ](https://github.com/TheerajSubhakaarAS)
+- [THEERAJ SUBHAKAAR AS](https://github.com/TheerajSubhakaarAS)
 ## DATASET
 Thanks to kaggle you can find my [DATASET](https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset) here..
 
