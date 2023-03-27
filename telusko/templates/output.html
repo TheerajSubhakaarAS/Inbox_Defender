@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>DASHBOARD</title>
+    <link rel="stylesheet" href="{% static 'nav.css' %}" >
+    <link rel="stylesheet" href="{% static 'button.css' %}" >
+    <title>Answer</title>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col">
+            <div class="col-md">
+                <div class="card text-center text-white  mb-3" style="background-color:#04AA6D;">
+                    <div class="card-header">
+                        <h5 class="card-title" style="color: white ; font-weight: bolder; font-family:'Courier New', Courier, monospace  ; font-size: 30px;">the given message is</h5>    
+                        <p class="answer">
+                            {% if answer == "ham" %} Not Spam {% else %} Spam {% endif %}
+                        </p>
+                        <a href="/" class="button button4">Back</a>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title"></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- Main Section Start -->
+   
+</body>
+
+</html>
+

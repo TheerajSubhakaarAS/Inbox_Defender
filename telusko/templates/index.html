@@ -1,0 +1,67 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{% static 'base.css' %}" >
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'button.css' %}" >
+    </head>
+<style>
+    .xt{
+        width: 50%;
+        padding: 5px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+</style>
+
+<body>
+    <center>
+    <div class="topnav">
+        <a class="active" href="/home">Home</a>
+      </div>
+      
+        <hr/>
+        <br>
+      <section class="sec"> 
+        
+                <h3 class="head">spam detection</h3>
+                <form method="post" action="check" class="float">
+                {% csrf_token %}
+                <h3 class="head">INSERT RECORD HERE</h3>
+                
+                <table border="1" class="content-table">
+                    <tr>
+                    <td>Please enter your text here</td>
+                    <td><textarea name="rawdata" placeholder="Enter Your Text Here..." id="rawdata"></textarea><br></td>
+                    </tr>
+                    <div class="button button4">
+                        <label class="radiocontainer">RANDOM CLASSIFIER
+                            <input type="radio" name="algo" value="RANDOM CLASSIFIER">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="radiocontainer">SUPPORT VECTOR MACHINE
+                            <input type="radio" name="algo" value="SUPPORT VECTOR MACHINE">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="radiocontainer">LOGISTIC REGRESSION
+                            <input type="radio" name="algo" value="LOGISTIC REGRESSION">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </table>
+                <button type="submit" class="button button4">Check</button>
+                
+        </div>
+      </section>
+    </center>    
+</body>
+</html>
